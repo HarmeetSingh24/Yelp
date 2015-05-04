@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Student Name:Harmeet Singh Assi   -->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Best Restaurants on Google Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="yelp.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  </head>
+  <body onload="initialize();"background="http://www.ics.uci.edu/~vpsaini/files/logo.png"style="background-size:100%">
+    <form>
+		<center>
+       <label>Search Terms: <input type="text" id="search"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+	   </center>
+    </form>
+	
+    <div id="output" style="float:left">&nbsp;</div>
+	<div id="map-canvas" style="height:600px;width:500px;float:right"></div>
+  </body>
+</html>
